@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 7em;
+    grid-area: 1 / 2 / 1 / 5;
+    margin-top: 300px;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+#introduction-text {
+    grid-area: 2 / 3 / 2 / 7;
+}
+
+h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.section-title {
+    font-weight: 700;
+}
+
+#portrait {
+    width: 450px;
+    grid-area: 1 / 10 / span 2 / -1;
+    margin-top: 300px;
+    box-shadow: -60px -60px #ff8364;
+}
+
+header {
+    justify-content: right;
+    background-color: #5f6caf;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 60px;
+    display: flex;
+}
+
+.nav-link {
+    margin-left: 60px;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    display: grid;
+    grid-template: 1fr 3fr 2fr 2fr/ repeat(12, 1fr);
+    height: 2000px;
+    background: linear-gradient(90deg, #edf7fa 60%, #ffb677 60%);
+}
+
+#skills {
+    grid-area: 3 / 2 / 3 / 7;
+}
+
+#contact {
+    grid-area: 4 / 2 / 4 / 7;
+}
