@@ -13,29 +13,33 @@ h1 {
 
 h2 {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: 400;
 }
 
 #introduction-text {
     grid-area: 2 / 3 / 2 / 7;
+    line-height: 1.5;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 h3 {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 400;
 }
 
 .section-title {
     font-weight: 700;
+    margin-bottom: 20px;
 }
 
 #portrait {
-    width: 450px;
+    width: 400px;
     grid-area: 1 / 10 / span 2 / -1;
     margin-top: 300px;
-    box-shadow: -60px -60px #ff8364;
+    box-shadow: -20px 20px #ff8364, -40px 40px #ffb677, -41px 39px black, -39px 41px black, -60px 60px #5f6caf;
 }
 
 header {
@@ -58,7 +62,7 @@ header {
 
 main {
     display: grid;
-    grid-template: 1fr 3fr 2fr 2fr/ repeat(12, 1fr);
+    grid-template: 1fr 2fr 1.5fr 1.5fr / repeat(12, 1fr);
     height: 2000px;
     background: linear-gradient(90deg, #edf7fa 60%, #ffb677 60%);
 }
@@ -67,6 +71,62 @@ main {
     grid-area: 3 / 2 / 3 / 7;
 }
 
+#skill-icons {
+    grid-area: 4 / 3 / 4 / 7;
+}
+
+i {
+    font-size: 3em;
+    margin-right: 20px;
+}
+
+i:hover {
+    transform: scale(1.2);
+    color: #5f6caf;
+}
+
 #contact {
     grid-area: 4 / 2 / 4 / 7;
+    display: inline-block;
+}
+
+#contact i {
+    float: left;
+}
+
+#contact i:hover {
+    color: black;
+    transform: none;
+}
+
+#bogart {
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 1700px) {
+    main {
+        height: 1500px;
+    }
+
+    h1 {
+        font-size: 6em;
+        margin-top: 200px;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    #portrait {
+        width: 350px;
+        margin-top: 200px;
+    }
 }
